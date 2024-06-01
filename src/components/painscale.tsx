@@ -71,12 +71,12 @@ export default function Painscale(props: {
         {Array.from({length: 11}).map((_, e) => (
           <div key={e} className='line-radio-container'>
             <div className='painscale-radio'>
-              <input
-                {...props.register('pain')}
-                type="radio"
-                value={e}
-              />
               <label>
+                <input
+                  {...props.register('pain')}
+                  type="radio"
+                  value={e}
+                />
                 {e}
               </label>
             </div>
