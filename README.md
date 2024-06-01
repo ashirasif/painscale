@@ -7,8 +7,12 @@ uses vite and react for painscale component with form validation
  - zod
 
 
-### Styling
+### Styling:
 
 uses plain stylesheets for styling
+
+#### Note:
+
+Please ignore the src/components/radio.tsx as it isn't being used.
 
 
