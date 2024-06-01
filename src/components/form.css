@@ -22,7 +22,7 @@
 }
 
 
-.radio-container > div:not(:first-child, :last-child) > * {
+.radio-container > div:not(:first-child, :last-child) > *:first-child {
   padding-left: 1rem;
 }
 
@@ -38,3 +38,43 @@
 .center {
   text-align: center;
 }
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  color: white;
+  width: 10rem;
+  margin-top: 2rem;
+  border-radius: 5px;
+  background-color: blue;
+  cursor: pointer;
+}
+
+.button-container {
+  display: flex;
+  justify-content: end;
+}
+
+.error {
+  color: red;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+
+@media (max-width: 768px) {
+  .button-container {
+    justify-content: center;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  .radio-container > div > *:not(:first-child) {
+    flex-basis: 20%;
+  }
+  .radio-container > div:not(:last-child) > *:first-child {
+    flex-basis: 60%;
+    padding-right: 0.5rem;
+  }
+}
+  

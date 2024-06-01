@@ -69,6 +69,13 @@ svg {
   grid-template-columns: repeat(10, 1fr);
 }
 
+.painscale-radio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .text-container {
   display: grid;
@@ -85,4 +92,21 @@ svg {
 
 .text-container > div:last-child {
   text-align: right;
+}
+
+@media (max-width: 768px) {
+  label {
+    font-size: 0.8rem;
+  }
+  svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .vert-lines-container {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    width: calc(100% - 1rem);
+    margin: 0 auto;
+  }
 }
