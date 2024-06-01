@@ -1,0 +1,39 @@
+.painscale-radio-container, .vert-lines-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.painscale-container {
+  background: grey;
+}
+
+.line-radio-container {
+  display: flex;
+  position: relative;
+  flex: 1 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.painscale-container > * + * {
+  margin-top: 1rem;
+}
+
+.hori-line {
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  top: 25%;
+  right: 0;
+  background: black;
+}
+
+.vert-line {
+  width: 1px;
+  height: 20px;
+  background: black;
+}
