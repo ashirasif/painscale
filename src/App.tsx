@@ -1,10 +1,17 @@
 
 
-import React from 'react'
+import './App.css'
+import Form from './components/form'
 
 export default function App() {
   return (
-    <div>App</div>
+    <main>
+      <div className='container'>
+        <h1>Symptoms and History</h1>
+        <Form />
+      </div>
+    </main>
+
   )
 }
 

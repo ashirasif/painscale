@@ -1,0 +1,40 @@
+.radio-container > div:not(:last-child) {
+  display: flex;
+  align-items: stretch;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+
+.radio-container > div > *:not(:first-child) {
+  flex-basis: 25%;
+}
+
+.radio-container > div > div:not(:first-child) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.radio-container > div:not(:last-child) > *:first-child {
+  flex-basis: 50%;
+  padding-right: 0.5rem;
+}
+
+
+.radio-container > div:not(:first-child, :last-child) > * {
+  padding-left: 1rem;
+}
+
+.radio-container > div:not(:first-child) > *:not(:last-child) {
+  border-right: 1px solid #e0e0e0;
+}
+
+
+.radio-container > div:nth-child(odd):not(:first-child, :last-child) {
+  background-color: #f9f9f9;
+}
+
+.center {
+  text-align: center;
+}
